@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  monthly_rent: 9.99
+  monthly_iptu: 9.99
+  estimated_power_bill: 9.99
+  estimated_water_bill: 9.99
+  condominio: 9.99
+  rental_price: 9.99
+
+two:
+  monthly_rent: 9.99
+  monthly_iptu: 9.99
+  estimated_power_bill: 9.99
+  estimated_water_bill: 9.99
+  condominio: 9.99
+  rental_price: 9.99

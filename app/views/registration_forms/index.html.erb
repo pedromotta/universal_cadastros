@@ -1,0 +1,56 @@
+<h1>Ficha Cadastral</h1>
+<h2>Dados do Imóvel</h2>
+<%= form_with model: @registration_form do |f| %>
+	<div class="divider"></div>
+  <div class="section">
+    <h5>Endereço</h5>
+    <div class="row">
+    	<div class="col s12">
+        <%= f.label :zip_code, 'CEP' %>
+				<%= f.text_field :zip_code %>
+      </div>
+      <div class="col s8">
+        <%= f.label :street_address, 'Endereço' %>
+				<%= f.text_field :street_address %>
+      </div>
+      <div class="col s4">
+        <%= f.label :street_number, 'Número' %>
+				<%= f.text_field :street_number %>
+      </div>
+      <div class="col s6">
+        <%= f.label :complement, 'Complemento' %>
+				<%= f.text_field :complement %>
+      </div>
+      <div class="col s3">
+        <%= f.label :city, 'Cidade' %>
+				<%= f.text_field :city %>
+      </div>
+      
+        <%= f.label :state, 'Estado' %>
+				<%= f.select :state, ['MG', 'RJ', 'SP']%>
+    </div>
+  </div>
+    <div class="divider"></div>
+  	<div class="section">
+    	<h5>Valores</h5>
+    	<div class="row">
+    	</div>
+    </div>
+	<div>
+		<%= f.label :rent, 'Aluguel Mensal' %>
+		<%= f.text_field :rent %>
+		<%= f.label :iptu, 'IPTU' %>
+		<%= f.text_field :iptu %>
+		<%= f.label :iptu, 'IPTU' %>
+		<%= f.text_field :iptu %>
+		<%= f.label :power_bill, 'Estimativa Luz' %>
+		<%= f.text_field :power_bill %>
+		<%= f.label :water_bill, 'Estimativa Agua' %>
+		<%= f.text_field :water_bill %>
+		<%= f.label :condominio, 'Condomínio' %>
+		<%= f.text_field :condominio %>
+		<%= f.label :rental_price, 'Valor total da locação' %>
+		<%= f.text_field :rental_price %>
+	</div>
+  <%= f.submit %>
+<% end %>
